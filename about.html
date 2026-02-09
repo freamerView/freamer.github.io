@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О компании — Печати Брянск | Производство печатей и штампов</title>
+  <meta name="description" content="О производстве печатей и штампов в Брянске: опыт, современное оборудование, печати для ИП и ООО, медицинские и кадастровые печати. Быстрое изготовление.">
+  <link rel="canonical" href="" id="canonical-url">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="О компании — Печати Брянск">
+  <meta property="og:description" content="Производство печатей и штампов в Брянске. Опыт, качество, быстрые сроки изготовления.">
+  <meta property="og:url" content="" id="og-url">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="О компании — Печати Брянск">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Печати Брянск</a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Каталог</a>
+        <a href="about.html" class="nav-link active">О компании</a>
+        <a href="contacts.html" class="nav-link">Контакты</a>
+      </nav>
+      <button type="button" class="cart-btn" id="cartBtn" aria-label="Корзина">
+        <span class="cart-icon"></span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main main-page">
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-title">О компании</h1>
+      </div>
+    </section>
+
+    <section class="about-content">
+      <div class="container narrow">
+        <p class="about-lead">
+          Мы — современное производство печатей и штампов в Брянске. Работаем с юридическими лицами, индивидуальными предпринимателями, медицинскими и кадастровыми организациями.
+        </p>
+        <div class="about-blocks">
+          <div class="about-block">
+            <h2>Опыт и надёжность</h2>
+            <p>Многолетний опыт изготовления печатей позволяет нам гарантировать качество оттиска и соответствие действующим требованиям. Мы используем современное оборудование и материалы, поэтому каждая печать служит долго и даёт чёткий оттиск.</p>
+          </div>
+          <div class="about-block">
+            <h2>Скорость и удобство</h2>
+            <p>Изготовление в сжатые сроки без потери качества. Вы можете оформить заказ через сайт, уточнить детали по телефону или в мессенджере. Доставка по Брянску и области или самовывоз — как вам удобнее.</p>
+          </div>
+          <div class="about-block">
+            <h2>Широкий ассортимент</h2>
+            <p>Печати для ИП и ООО, медицинские и кадастровые печати, изготовление по оттиску, оснастки и расходные материалы. Подберём оптимальный вариант под ваши задачи и бюджет.</p>
+          </div>
+        </div>
+        <p class="about-cta">
+          Остались вопросы? <a href="contacts.html">Свяжитесь с нами</a> — мы с радостью ответим и поможем с выбором.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-links">
+          <a href="policy.html">Политика конфиденциальности</a>
+          <a href="offer.html">Публичная оферта</a>
+        </div>
+        <p class="footer-copy">© Печати Брянск</p>
+      </div>
+    </footer>
+  </main>
+
+  <div class="cart-overlay" id="cartOverlay" aria-hidden="true">
+    <div class="cart-sidebar">
+      <div class="cart-header">
+        <h2>Корзина</h2>
+        <button type="button" class="cart-close" id="cartClose" aria-label="Закрыть">&times;</button>
+      </div>
+      <div class="cart-body" id="cartBody"></div>
+      <div class="cart-footer">
+        <form class="cart-form" id="cartForm" action="https://formspree.io/f/mlgwdgbp" method="POST">
+          <input type="hidden" name="_subject" value="Новый заказ — Печати Брянск">
+          <input type="hidden" name="order_items" id="orderItemsInput">
+          <input type="hidden" name="order_total" id="orderTotalInput">
+          <input type="hidden" name="order_discount" id="orderDiscountInput">
+          <input type="text" name="name" placeholder="Ваше имя" required>
+          <input type="tel" name="phone" placeholder="Телефон" required>
+          <textarea name="comment" placeholder="Комментарий к заказу" rows="2"></textarea>
+          <button type="submit" class="btn btn-primary btn-block">Оформить заказ</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/seo.js"></script>
+</body>
+</html>
